@@ -47,6 +47,11 @@ A function invocation of Axelar's **CallContractWithToken** will start the trans
 
 Cosmos is an application specific network.  An API is built top of tendermint to provide the functionalities of the transfer.  
 
+## Transfer from Cosmos to Ethereum
+
+Having a look at the Axelar flow, the use case initiator will be the DApp from a Cosmos network.  The API invocation from Cosmos API to a Squid's API to passing similar metadata as the payload.  The Squid API function will initiate the flow and make a possible smart contract functional call to swap from ATOM to ETH.  Assuming again that Uniswap V3 protocol is used to swap ATOM for ETH or forward ATOM to a destination wallet address.  An acknowledge of a successful transfer can be packaged and returned back via the Axelar flow.
+![Axelar Flow Architecture](./gmp-diagram-jul22.jpg)
+
 
 
 
